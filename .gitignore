@@ -1,0 +1,6 @@
+lib/
+backup/
+*.lps
+*.dbg
+*.exe
+testmsgboxes
