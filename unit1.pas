@@ -277,7 +277,21 @@ procedure TForm1.ButtonAskUserClick(Sender: TObject);
 var
   Buttons: TDialogButtons;
   N: integer;
+  NDef: integer;
 begin
+  NDef:= -1;
+  if CheckFlag_B1.Checked then
+    NDef:= 0
+  else
+  if CheckFlag_B2.Checked then
+    NDef:= 1
+  else
+  if CheckFlag_B3.Checked then
+    NDef:= 2
+  else
+  if CheckFlag_B4.Checked then
+    NDef:= 3;
+
   Buttons:= TDialogButtons.Create(TDialogButton);
   with Buttons.Add do
   begin
@@ -304,6 +318,9 @@ begin
     Caption:= '<ignore>';
     ModalResult:= mrIgnore;
   end;
+
+  if (NDef>=0) and (NDef<Buttons.Count) then
+    Buttons.DefaultButton:= Buttons[NDef];
 
   N:= AskUser(
     EditCaption.Text,
