@@ -8,10 +8,10 @@ object Form1: TForm1
   ClientHeight = 481
   ClientWidth = 585
   Position = poScreenCenter
-  LCLVersion = '2.1.0.0'
+  LCLVersion = '4.99.0.0'
   object EditCaption: TEdit
     Left = 104
-    Height = 33
+    Height = 34
     Top = 8
     Width = 472
     TabOrder = 0
@@ -19,7 +19,7 @@ object Form1: TForm1
   end
   object EditMessage: TEdit
     Left = 104
-    Height = 33
+    Height = 34
     Top = 40
     Width = 472
     TabOrder = 1
@@ -30,7 +30,7 @@ object Form1: TForm1
     AnchorSideTop.Side = asrCenter
     Left = 8
     Height = 17
-    Top = 16
+    Top = 17
     Width = 57
     Caption = 'Caption:'
     ParentColor = False
@@ -40,7 +40,7 @@ object Form1: TForm1
     AnchorSideTop.Side = asrCenter
     Left = 8
     Height = 17
-    Top = 48
+    Top = 49
     Width = 63
     Caption = 'Message:'
     ParentColor = False
@@ -59,8 +59,8 @@ object Form1: TForm1
     BorderSpacing.Around = 6
     Caption = 'Close'
     Constraints.MinWidth = 100
-    OnClick = ButtonCloseClick
     TabOrder = 9
+    OnClick = ButtonCloseClick
   end
   object ButtonAppMsgbox: TButton
     Left = 152
@@ -68,8 +68,8 @@ object Form1: TForm1
     Top = 256
     Width = 264
     Caption = 'Application.MessageBox'
-    OnClick = ButtonAppMsgboxClick
     TabOrder = 5
+    OnClick = ButtonAppMsgboxClick
   end
   object GroupBox1: TGroupBox
     Left = 8
@@ -137,8 +137,8 @@ object Form1: TForm1
     Top = 288
     Width = 264
     Caption = 'LCLIntf.MessageBox'
-    OnClick = ButtonLCLIntfMsgboxClick
     TabOrder = 6
+    OnClick = ButtonLCLIntfMsgboxClick
   end
   object GroupBox2: TGroupBox
     Left = 232
@@ -198,8 +198,8 @@ object Form1: TForm1
     Top = 320
     Width = 264
     Caption = 'MessageDlg'
-    OnClick = ButtonMsgDlgClick
     TabOrder = 7
+    OnClick = ButtonMsgDlgClick
   end
   object GroupBox3: TGroupBox
     Left = 463
@@ -251,8 +251,8 @@ object Form1: TForm1
     Top = 352
     Width = 264
     Caption = 'PromptUser'
-    OnClick = ButtonPromptUserClick
     TabOrder = 8
+    OnClick = ButtonPromptUserClick
   end
   object ButtonAskUser: TButton
     Left = 152
@@ -260,7 +260,7 @@ object Form1: TForm1
     Top = 384
     Width = 264
     Caption = 'AskUser (ignore flags)'
-    OnClick = ButtonAskUserClick
     TabOrder = 10
+    OnClick = ButtonAskUserClick
   end
 end
